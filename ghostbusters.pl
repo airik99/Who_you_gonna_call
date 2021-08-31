@@ -79,19 +79,3 @@ tareaCompleja(Tarea) :-
     Cantidad > 2.
     
 tareaCompleja(limpiarTecho).
-
-% ------------------- PUNTO 6 ------------------- 
-
-herramientasRequeridas(ordenarCuarto, [aspiradora(100), trapeador, plumero]).
-herramientasRequeridas(limpiarTecho, [escoba, pala]).
-herramientasRequeridas(cortarPasto, [bordedadora]).
-herramientasRequeridas(limpiarBanio, [sopapa, trapeador]).
-herramientasRequeridas(encerarPisos, [lustradpesora, cera, aspiradora(300)]).
-
-herramientasRequeridas(ordenarCuarto, [escoba, trapeador, plumero]).
-
-% Explicar a qué se debe que esto sea difícil o fácil de incorporar.
-
-% Al agregar otra clausulo en herramientasRequeridas en la tarea ordenarCuarto, no habria que cambiar todo lo hecho anteriormente ya que de esta forma
-% decimos que las herramientas necesarias para ordenar el cuarto pueden ser tanto [aspiradora(100), trapeador, plumero] como [escoba, trapeador, plumero].
-% Lo único que hacemos es agregar otra clausula de la misma tarea, con las herramientas que se necesiten
